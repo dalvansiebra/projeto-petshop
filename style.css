@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #591f1f;
+    --cor2: #733333;
+    --cor3: #8c4d4d;
+    --cor4: #ffe5e5;
+}
+
+.root {
+    background-color: var(--cor4);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* header > .logo-side {
+}
+
+tag a link
+.header-logo > .logo-a {
+}
+
+tag img dentro do a
+.logo-a > .logo-img {
+} */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: 400;
+}
+
+nav > a:not(:last-child) {
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    font-weight: 500;
+}
+
+/* primeira section parallax */
+section#parallax1 {
+    background-image: url(/assets/foto-cao-e-gato-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(51, 51, 51);
+    
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    height: 80vh !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+section#parallax1 > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#parallax1 button {
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.section-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: white;
+    color: var(--cor1);
+    text-align: justify;
+    height: 300px;
+    
+}
+
+/* segunda section parallax */
+section#parallax2 {
+    background-image: url(/assets/foto-cao-6.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(51, 51, 51);
+    
+    font-weight: 500;
+    font-size: larger;
+    color: var(--cor1);
+    text-align: center;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    height: 100vh !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+section#parallax2 > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+section#parallax2 > p {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#parallax2 button {
+    background-color: var(--cor2);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#parallax2 button p {
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+section.section-servicos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: white;
+    color: var(--cor1);
+    text-align: justify;
+    height: 300px;
+    background-size: contain;
+    
+}
+
+/* div dentro do section-servicos com texto dentro */
+.section-servicos .section-servicos-texto {
+    width: 50%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.section-servicos .section-servicos-texto > * {
+    margin-bottom: 20px;
+}
+
+/* div dentro do section-servicos com img dentro */
+.section-servicos .section-servicos-foto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-servicos .section-servicos-foto img {
+    width: inherit;
+    min-width: 250px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 20px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .footer-redes-sociais a svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    color: var(--cor1);
+}
+
+footer .footer-contatos ul li {
+    list-style: none;
+}
+
+.copyright {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.copyright p a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 620px) {
+
+    section.section-servicos {
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 50px;
+    }
+
+   .section-servicos .section-servicos-texto {
+        width: 100%;
+    }
+
+   .section-servicos .section-servicos-foto {
+        width: 100%;
+    }
+}
