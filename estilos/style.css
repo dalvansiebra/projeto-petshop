@@ -280,6 +280,14 @@ footer .footer-contatos ul li {
         font-weight: 400;
     }
 
+    section#parallax1 {
+        background-size: cover;
+    }
+
+    section#parallax2 {
+        background-size: cover;
+    }
+
     section.section-servicos {
         flex-direction: column;
         height: 100vh;
