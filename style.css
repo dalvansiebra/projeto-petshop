@@ -63,7 +63,7 @@ nav > a:hover {
 
 /* primeira section parallax */
 section#parallax1 {
-    background-image: url(/assets/foto-cao-e-gato-1.jpg);
+    background-image: url(../projeto-petshop/assets/foto-cao-e-gato-1.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -108,7 +108,7 @@ section.section-sobre {
 
 /* segunda section parallax */
 section#parallax2 {
-    background-image: url(/assets/foto-cao-6.jpg);
+    background-image: url(./assets/foto-cao-6.jpg);
     background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
