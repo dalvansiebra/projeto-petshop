@@ -40,20 +40,24 @@ tag img dentro do a
 .logo-a > .logo-img {
 } */
 
-nav {
+span#header-burguer {
+    display: none;
+}
+
+nav #navBlock {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-items: center;
+    justify-content: center;
 }
 
-nav > a {
+nav #navBlock a {
     text-decoration: none;
     color: var(--cor1);
     font-weight: 400;
 }
 
-nav > a:not(:last-child) {
+nav > #navBlock > a:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -63,7 +67,7 @@ nav > a:hover {
 
 /* primeira section parallax */
 section#parallax1 {
-    background-image: url(../projeto-petshop/assets/foto-cao-e-gato-1.jpg);
+    background-image: url(../assets/foto-cao-e-gato-1.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -108,7 +112,7 @@ section.section-sobre {
 
 /* segunda section parallax */
 section#parallax2 {
-    background-image: url(./assets/foto-cao-6.jpg);
+    background-image: url(../assets/foto-cao-6.jpg);
     background-position: center bottom;
     background-size: cover;
     background-attachment: fixed;
@@ -227,6 +231,7 @@ footer .footer-redes-sociais a svg {
 
 footer .footer-contatos ul li {
     list-style: none;
+    font-weight: 600;
 }
 
 .copyright {
@@ -247,12 +252,33 @@ footer .footer-contatos ul li {
 
 
 
-
-
-
-
-
 @media (max-width: 620px) {
+
+    span#header-burguer {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    nav > #navBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: first baseline;
+        margin-top: 50px;
+
+        padding: 10px;
+
+        background-color: white;
+    }
+    
+    nav > #navBlock > a {
+        text-decoration: none;
+        color: var(--cor1);
+        font-weight: 400;
+    }
 
     section.section-servicos {
         flex-direction: column;
@@ -266,5 +292,14 @@ footer .footer-contatos ul li {
 
    .section-servicos .section-servicos-foto {
         width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer > * {
+        margin: 10px auto;
     }
 }

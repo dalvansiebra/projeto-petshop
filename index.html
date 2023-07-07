@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petulância</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
 </head>
 <body>
     
@@ -16,13 +17,17 @@
             <div class="logo-side">
                 <a href="/index.html" class="logo-a"><img class="logo-img" src="./assets/foto-logo.png" alt="foto logo"></a>
             </div>
+            
+            <span id="header-burguer" class="material-icons" onclick="clickMenu()">menu</span>
 
             <!-- colocar os links corretos -->
-            <nav>
-                <a href="/index.html">Home</a>
-                <a href="/sobre.html">Sobre</a>
-                <a href="/serviços.html">Serviços</a>
-                <a href="/contatos.html">Contatos</a>
+            <nav id="headerNav">
+                <div id="navBlock">
+                    <a href="./index.html">Home</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./serviços.html">Serviços</a>
+                    <a href="./contatos.html">Contatos</a>
+                </div>
             </nav>
 
         </header>
@@ -75,7 +80,7 @@
             </div>
 
             <div class="section-servicos-foto">
-                <img class="foto-servicos" src="/assets/foto-cao-petshop-1.jpg" alt="">
+                <img class="foto-servicos" src="./assets/foto-cao-petshop-1.jpg" alt="">
             </div>
 
         </section>
@@ -122,6 +127,7 @@
     </div>
     <!-- fim root -->
 
+    <script src="./scripts/script.js"></script>
 
 </body>
 </html>
