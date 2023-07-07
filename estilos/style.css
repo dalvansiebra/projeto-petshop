@@ -281,11 +281,11 @@ footer .footer-contatos ul li {
     }
 
     section#parallax1 {
-        background-size: cover;
+        background-size: contain;
     }
 
     section#parallax2 {
-        background-size: cover;
+        background-size: contain;
     }
 
     section.section-servicos {
