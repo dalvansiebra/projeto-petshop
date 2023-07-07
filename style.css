@@ -203,6 +203,8 @@ section.section-servicos {
 .section-servicos .section-servicos-foto img {
     width: inherit;
     min-width: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 1px black;
 }
 
 footer {
